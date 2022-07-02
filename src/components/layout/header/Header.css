@@ -1,0 +1,24 @@
+.pricebook-header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.company-logo {
+    margin: 0 20px;
+    font-size: 0.8em;
+}
+
+header img {
+    width: 116px;
+    height: 30px;
+}
+
+header h1 {
+    display: inline-block;
+    margin-right: 60%;
+}
