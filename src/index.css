@@ -5,7 +5,8 @@
 }
 
 body{
-  background-color: black;
+  /*background-color: black;*/
+  min-width: 1024px;
   font-size: 10px;
   font-family: 'Roboto', sans-serif;
 }

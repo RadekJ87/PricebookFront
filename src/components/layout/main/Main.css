@@ -1,0 +1,20 @@
+.pricebook-container {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: row;
+}
+
+.pricebook-table-container {
+    background-color: cadetblue;
+    flex-basis: 70%;
+}
+
+.pricebook-options-container {
+    background-color: gray;
+    flex-basis: 30%;
+}
+
+table{
+    border: 1px solid black;
+}
