@@ -1,6 +1,7 @@
 import React from 'react';
 import './Main.css';
 import {ProductsList} from "../../products/ProductsList";
+import {MainAside} from "../main-aside/MainAside";
 
 
 
@@ -11,7 +12,7 @@ export const Main = () => {
                 <ProductsList/>
             </main>
             <aside className="pricebook-options-container">
-                <h1>Opcje</h1>
+                <MainAside/>
             </aside>
         </div>
     );

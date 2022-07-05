@@ -15,10 +15,10 @@ export const ProductTableRow = (props: Props) => {
             <td>{props.product.description}</td>
             <td>{props.product.drawingNumber}</td>
             <td>{props.product.revision}</td>
-            <td>{props.product.itemNumber}</td>
-            <td>{props.product.moq}</td>
+            {props.product.itemNumber === '' ? <td>BRAK</td> : <td>{props.product.itemNumber}</td>}
+            {props.product.moq === 1 ? <td>{props.product.moq} pc</td>: <td>{props.product.moq} pcs</td>}
             <td>{props.product.price}</td>
-            <td>{props.product.offerNumber}</td>
+            <td>{props.product.offerNumber}€</td>
         </tr>
     );
 }
