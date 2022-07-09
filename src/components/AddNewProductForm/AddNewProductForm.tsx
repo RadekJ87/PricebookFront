@@ -42,9 +42,9 @@ export const AddNewProductForm = () => {
         }));
     };
 
-    const refreshPage = () =>{
-        window.location.reload();
-    }
+    // const refreshPage = () =>{
+    //     window.location.reload();
+    // }
 
     if(loading){
         return (<h1>Trwa dodawanie produktu do bazy danych...</h1>);
@@ -121,7 +121,7 @@ export const AddNewProductForm = () => {
                            value={form.offerNumber}
                            onChange={e => updateForm("offerNumber", e.target.value)}/>
                 </label>
-                <button type="submit" onClick={refreshPage}>Dodaj do cennika</button>
+                <button type="submit"> Dodaj do cennika</button>
             </form>
         </div>
     );

@@ -5,7 +5,7 @@ import {PricebookOptions} from "../../PricebookOptions/PricebookOptions";
 export const MainAside = () => {
     return (
         <>
-            <AddNewProductForm/>
+            {/*<AddNewProductForm/>*/}
             <PricebookOptions/>
         </>
     )
