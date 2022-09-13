@@ -21,7 +21,7 @@ export const ProductsList = () => {
 
     useEffect(() => {
         refresh();
-     }, [search]);
+     }, [search]); // zrob dodawanie poroduktow w tym samym widoku, dodaj do use efect -> data, zobacz czy przeładowuję. Mozna dodatkowy context zronic?
 
     const setFromLocalState = (e: SyntheticEvent) => {
         e.preventDefault();
