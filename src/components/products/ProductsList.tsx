@@ -16,6 +16,7 @@ export const ProductsList = () => {
         setData(null);
         const res = await fetch(`http://localhost:3001/price/${search}`);
         setData(await res.json());
+        setInputValue(search);
     };
 
 
@@ -32,22 +33,10 @@ export const ProductsList = () => {
         return <p>Trwa wczytywanie danych...</p>
     }
 
-    if (data.productsList.length === 0) {
-        return (
-            <>
-                <h1>Lista produktów {search}</h1>
-                <form onSubmit={setFromLocalState}>
-                    <TextInput onChange={(e: ChangeEvent<HTMLInputElement>) => setInputValue(e.target.value)}
-                               value={inputValue}
-                               description={'Podaj numer rysunku'}
-                               minLength={1} maxLength={15} name={'searchProduct'}/>
-                    <button type='submit'>Wyszukaj</button>
-                </form>
-                <NoFoundProductsList dwgNo={search}/>
-            </>
-        )
-    }
-
+    const showAllProducts = async (e: SyntheticEvent) => {
+        e.preventDefault();
+        setSearch('');
+    };
 
     return (<>
 
@@ -58,6 +47,7 @@ export const ProductsList = () => {
                        minLength={1} maxLength={15} name={'searchProduct'}/>
             <button type='submit'>Wyszukaj</button>
         </form>
-        <ProductsTable productsList={data.productsList}/>
+        <form onSubmit={showAllProducts}><button type='submit'>Pokaż wszystkie produkty</button></form>
+        {data.productsList.length === 0 ? <NoFoundProductsList dwgNo={search}/> : <ProductsTable productsList={data.productsList}/> }
     </>);
 };
