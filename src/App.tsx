@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import {Header} from "./components/layout/header/Header";
-import { Main } from './components/layout/main/Main';
-import { SearchContext } from './components/contexts/search.context';
+import {Header} from "./components/Header/Header";
+import { Main } from './components/Main/Main';
+import { SearchContext } from './contexts/search.context';
 
 
 

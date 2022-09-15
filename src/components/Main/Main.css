@@ -6,7 +6,7 @@
 }
 
 .pricebook-table-container {
-    background-color: cadetblue;
+    /*background-color: cadetblue;*/
     flex-basis: 70%;
 }
 
@@ -15,6 +15,6 @@
     flex-basis: 30%;
 }
 
-table{
-    border: 1px solid black;
-}
+/*table{*/
+/*    border: 1px solid black;*/
+/*}*/

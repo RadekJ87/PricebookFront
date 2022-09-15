@@ -1,5 +1,5 @@
 import {SyntheticEvent, useContext, useState} from "react";
-import {SearchContext} from "../../contexts/search.context";
+import {SearchContext} from "../../../contexts/search.context";
 
 export const AddNewProduct = () => {
     const {search, setSearch} = useContext(SearchContext);
