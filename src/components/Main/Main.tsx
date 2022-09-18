@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import './Main.css';
 import {ProductsList} from "./main/ProductsList/ProductsList";
-import {OptionsList} from "./aside/OptionsList";
-import {PricebookOptions} from "../PricebookOptions/PricebookOptions";
+import {OptionsList} from "./aside/OptionsList/OptionsList";
+import {PricebookOptions} from "./aside/PricebookOptions/PricebookOptions";
 import {OptionsView} from "./aside/OptionsView";
 import {SearchContext} from '../../contexts/search.context';
 

@@ -1,5 +1,7 @@
 import {SyntheticEvent, useContext, useState} from "react";
-import {SearchContext} from "../../../contexts/search.context";
+import {SearchContext} from "../../../../contexts/search.context";
+import "./AddNewProduct.css";
+import {Button} from "../../../common/Button/Button";
 
 export const AddNewProduct = () => {
     const {search, setSearch} = useContext(SearchContext);
@@ -51,7 +53,7 @@ export const AddNewProduct = () => {
     }
 
     return (
-        <div className="new-product">
+        <div className="add-new-product-container">
             <h1>Dodaj produkt do cennika</h1>
             <form onSubmit={addProductToDatabase}>
                 <label>
@@ -121,8 +123,10 @@ export const AddNewProduct = () => {
                            value={form.offerNumber}
                            onChange={e => updateForm("offerNumber", e.target.value)}/>
                 </label>
-                <button type="submit"> Dodaj do cennika</button>
+                {/*<button type="submit"> Dodaj do cennika</button>*/}
+                <Button text={'Dodaj do cennika'} type={'submit'} className={'add-product-form-button'}/>
             </form>
+            <Button text={'Wyczyść pola'}  className={'add-product-form-button'}/>
         </div>
     );
 }

@@ -4,9 +4,9 @@ import './CompanyAddress.css';
 export const CompanyAddress = () => {
    return(
        <div className="company-address">
-           <h3>Kordas Sp z o.o.</h3>
-           <h3>ul. Zakładowa 2</h3>
-           <h3>57-215 Srebrna Góra</h3>
+           <h3>Nazwa firmy</h3>
+           <h3>ulica i numer lokalu</h3>
+           <h3>Kod pocztowy oraz miejscowość</h3>
        </div>
    )
 }

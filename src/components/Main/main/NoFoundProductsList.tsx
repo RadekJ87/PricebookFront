@@ -10,7 +10,7 @@ export const NoFoundProductsList = (props: drawingNumberToSearch) => {
 
     return (
         <>
-            <table>
+            <table className="products-table">
                 <thead>
                 <tr>
                     <th>Description</th>
