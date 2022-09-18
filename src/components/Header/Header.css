@@ -19,6 +19,8 @@ header img {
 }
 
 header h1 {
-    display: inline-block;
+    /*display: inline-block;*/
+    font-family: sans-serif;
+    font-size: 28px;
     margin-right: 60%;
 }

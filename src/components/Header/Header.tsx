@@ -1,6 +1,6 @@
 import './Header.css';
-import companyLogoImage from '../../../images/kordas-logo-1.svg';
-import {CompanyAddress} from "../../companyAddress/CompanyAddress";
+import companyLogoImage from '../../images/company_logo.png';
+import {CompanyAddress} from "./CompanyAddress/CompanyAddress";
 
 export const Header = () => {
     return(

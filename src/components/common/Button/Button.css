@@ -1,0 +1,29 @@
+.standard-button{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 7px;
+    cursor: pointer;
+}
+
+.options-button{
+    background-color: slateblue;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 3px 6px;
+    cursor: pointer;
+}
+
+.add-product-form-button{
+    background-color: slateblue;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+}

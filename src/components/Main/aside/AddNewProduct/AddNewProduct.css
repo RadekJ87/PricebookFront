@@ -1,0 +1,21 @@
+.add-new-product-container{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    width: 50%;
+}
+
+.add-new-product-container>h1{
+    font-size: 14px;
+    margin: 0 0 10px 10px;
+}
+.add-new-product-container form{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin: 0 0 10px 10px;
+}
+
+form~Button.add-product-form-button{
+    margin: 0 0 10px 10px;
+}

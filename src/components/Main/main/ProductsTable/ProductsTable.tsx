@@ -1,15 +1,17 @@
 import React from "react";
-import {ProductTableRow} from "./ProductTableRow";
+import {ProductTableRow} from "../ProductTableRow";
 import {ProductEntity} from 'types';
+import "./ProductsTable.css";
 
 interface Props {
     productsList: ProductEntity[],
+    isActive: boolean;
 }
 
 export const ProductsTable = (props: Props) => {
 
     return (
-        <table>
+        <table className={`products-table ${props.isActive ? "active" : ""}`}>
             <thead>
             <tr>
                 <th>Description</th>

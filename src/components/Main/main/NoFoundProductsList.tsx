@@ -1,6 +1,6 @@
 import React from "react";
 
-//style do zaciangiecia z Products table
+//usun i zrob props z klasa i wsrzykiwniem tbody
 
 interface drawingNumberToSearch {
     dwgNo: string,
@@ -10,7 +10,7 @@ export const NoFoundProductsList = (props: drawingNumberToSearch) => {
 
     return (
         <>
-            <table>
+            <table className="products-table">
                 <thead>
                 <tr>
                     <th>Description</th>
