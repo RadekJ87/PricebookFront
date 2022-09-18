@@ -1,0 +1,80 @@
+.products-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 12px;
+    width: 95%;
+    text-align: right;
+    margin: 10px 1.5%;
+    padding: 10px 5px;
+    overflow: auto;
+}
+
+
+.products-table thead {
+    background-color: #bbbbbb;
+
+}
+
+.products-table thead > tr {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.products-table thead th {
+    width: 100%;
+    border: none;
+    text-align: center;
+    padding: 10px 5px 10px 10px;
+}
+
+.products-table tbody {
+    /*width: 102%;*/
+    display: block;
+    height: 60vh;
+    overflow: auto;
+}
+
+.products-table tbody:before {
+    content: "-";
+    display: block;
+    line-height: 1em;
+    color: transparent;
+}
+
+.products-table tbody tr {
+    display: flex;
+    flex-direction: row;
+}
+
+.products-table tbody tr:nth-child(even) {
+    background-color: #bbbbbb;
+}
+
+.products-table tbody tr:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+.products-table tbody td {
+    width: 100%;
+    text-align: right;
+    padding: 4px 10px 4px 4px;
+}
+
+.products-table tbody td:first-child, .products-table thead th:first-child {
+    width: 200%;
+}
+
+.products-table tbody td:nth-child(3), .products-table thead th:nth-child(3) {
+    width: 50%;
+}
+
+.products-table tbody td:nth-child(4), .products-table thead th:nth-child(4) {
+    width: 125%;
+}
+
+.products-table tbody td:nth-child(n+5), .products-table thead th:nth-child(n+5) {
+    width: 75%;
+}
+
+

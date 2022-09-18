@@ -1,0 +1,20 @@
+.pricebook-options{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.pricebook-options> h1{
+    text-align: center;
+    margin: 20px 15px;
+    font-size: 22px;
+}
+
+.pricebook-options>div{
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
