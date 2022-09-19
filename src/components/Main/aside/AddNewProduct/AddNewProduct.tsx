@@ -2,6 +2,7 @@ import {SyntheticEvent, useContext, useState} from "react";
 import {SearchContext} from "../../../../contexts/search.context";
 import "./AddNewProduct.css";
 import {Button} from "../../../common/Button/Button";
+import {TextInput} from "../../../common/Input/TextInput";
 
 export const AddNewProduct = () => {
     const {search, setSearch} = useContext(SearchContext);
