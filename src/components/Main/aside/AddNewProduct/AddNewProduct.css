@@ -7,13 +7,34 @@
 
 .add-new-product-container>h1{
     font-size: 14px;
-    margin: 0 0 10px 10px;
+    margin: 5px 0 25px 10px;
 }
 .add-new-product-container form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-size: 12px;
     margin: 0 0 10px 10px;
+}
+
+.add-new-product-container form>label{
+  margin-bottom: 12px;
+}
+
+
+.add-new-product-container form label>p{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.add-new-product-container input{
+    font-size: 12px;
+    font-family: Calibri;
+    padding: 0 5px;
+    width: 100%;
+    height: 25px;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 4px;
 }
 
 form~Button.add-product-form-button{
