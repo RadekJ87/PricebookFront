@@ -1,6 +1,6 @@
 import {Route, Routes} from "react-router-dom";
 import React from "react";
-import {ChangePrices} from "./ChangePrices";
+import {ChangePrices} from "./ChangePrices/ChangePrices";
 import {ShowOfferDetails} from "./ShowOfferDetails";
 import {AddNewProduct} from "./AddNewProduct/AddNewProduct";
 

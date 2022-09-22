@@ -48,6 +48,18 @@ export const AddNewProduct = () => {
         }));
     };
 
+    const clearForm = () => {
+        setForm({
+            description: '',
+            drawingNumber: '',
+            revision: '',
+            itemNumber: '',
+            moq: 0,
+            price: 0,
+            offerNumber: '',
+        });
+    }
+
 
     if (loading) {
         return (<h1>Trwa dodawanie produktu do bazy danych...</h1>);
@@ -127,7 +139,7 @@ export const AddNewProduct = () => {
                 {/*<button type="submit"> Dodaj do cennika</button>*/}
                 <Button text={'Dodaj do cennika'} type={'submit'} className={'add-product-form-button'}/>
             </form>
-            <Button text={'Wyczyść pola'}  className={'add-product-form-button'}/>
+            <Button text={'Wyczyść pola'} className={'add-product-form-button'} onClick={clearForm}/>
         </div>
     );
 }
