@@ -136,7 +136,6 @@ export const AddNewProduct = () => {
                            value={form.offerNumber}
                            onChange={e => updateForm("offerNumber", e.target.value)}/>
                 </label>
-                {/*<button type="submit"> Dodaj do cennika</button>*/}
                 <Button text={'Dodaj do cennika'} type={'submit'} className={'add-product-form-button'}/>
             </form>
             <Button text={'Wyczyść pola'} className={'add-product-form-button'} onClick={clearForm}/>
