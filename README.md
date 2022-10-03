@@ -1,23 +1,22 @@
-[comment]: <> (<div position="center">)
+<div position="center">
 
-[comment]: <> (<img src="./public/assets/images/readme_img.PNG">)
+<img src="./public/pricebook_readme.png">
 
-[comment]: <> (</div>)
+</div>
 
 # Pricebook App - FrontEnd
 
 ## Wstęp - opis
 
-Hej! Pricebook prosty to cennik dla firm z branży CNC. Aplikację stworzyłem na własne potrzeby zawodowe, do szybkiej idendyfikacji cen produktów na podstawie numeru rysunku technniczego.
-Powinna się sprawdzić nie tylko w moim przypadku, ale także w innych przedsiębiorstwach zajmujących się szeroko rozumianą obróbką stali.
+Hej! Pricebook to prosty cennik dla firm zajmujących się produkcją elementów stalowych.<br> Aplikację stworzyłem na własne potrzeby zawodowe, do szybkiej idendyfikacji cen produktów na podstawie numeru rysunku technniczego.
+<br>Powinna się sprawdzić nie tylko w przypadku mojego pracodawncy, ale także w innych przedsiębiorstwach zajmujących się szeroko rozumianą obróbką stali.
 Główne funcjonalności:
-- wyświetlania zawartości cennika,
-- wyszukiwanie po numerze rysunku,
-- dodawanie nowych prodktów,
-- globalna zmiana cen na podstawie wskazanej podwyżki/obniżki procentowej - w implementacji,
-- wyświetlanie zawartości oferty handlowej - w implementacji,
+- wyświetlanie zawartości cennika,
+- wyszukiwanie rekordów po numerze rysunku,
+- dodawanie nowych produktów do cennika,
+- globalna zmiana cen na podstawie wskazanej podwyżki/obniżki procentowej,
+- wyświetlanie zawartości oferty handlowej,
 
-W przyszłości: import cennika w pliku csv.
 
 ## Demo
 
@@ -46,6 +45,7 @@ Dostępne wkrótce
  - @types/react-dom 18.0.5,
  - react 18.2.0,
  - react-dom 18.2.0,
+ - react-loader-spinner 5.3.4,
  - react-router-dom 6.3.0,
  - react-scripts 5.0.1,
  - typescript 4.7.4,
