@@ -1,7 +1,5 @@
 import React from "react";
 
-//usun i zrob props z klasa i wsrzykiwniem tbody
-
 interface drawingNumberToSearch {
     dwgNo: string,
 }
@@ -13,13 +11,23 @@ export const NoFoundProductsList = (props: drawingNumberToSearch) => {
             <table className="products-table">
                 <thead>
                 <tr>
-                    <th>Description</th>
-                    <th>Drawing number</th>
-                    <th>Revision</th>
-                    <th>Item number</th>
+                    {/*EN*/}
+                    {/*<th>Description</th>*/}
+                    {/*<th>Drawing number</th>*/}
+                    {/*<th>Revision</th>*/}
+                    {/*<th>Item number</th>*/}
+                    {/*<th>MOQ</th>*/}
+                    {/*<th>Price</th>*/}
+                    {/*<th>Offer number</th>*/}
+
+                    {/*PL*/}
+                    <th>Opis</th>
+                    <th>Numer rysunku</th>
+                    <th>Rewizja</th>
+                    <th>Numer materiału</th>
                     <th>MOQ</th>
-                    <th>Price</th>
-                    <th>Offer number</th>
+                    <th>Cena</th>
+                    <th>Numer oferty</th>
                 </tr>
                 </thead>
             </table>
@@ -27,8 +35,7 @@ export const NoFoundProductsList = (props: drawingNumberToSearch) => {
                 <p>Brak wpisów dla rysunku {props.dwgNo}</p>
             </div>
         </>
-    )
-        ;
+    );
 };
 
 

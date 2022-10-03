@@ -1,9 +1,10 @@
 import React from "react";
-import {OfferEntity} from "types";
+import {ProductEntity} from "types";
 import {OfferTableRow} from "../OfferTableRow/OfferTableRow";
+import './OfferTable.css';
 
 interface Props {
-    offerList: OfferEntity[],
+    offerList: ProductEntity[],
 }
 
 export const OfferTable = ({offerList}: Props) => {

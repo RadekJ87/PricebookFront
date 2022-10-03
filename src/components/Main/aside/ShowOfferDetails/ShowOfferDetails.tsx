@@ -3,6 +3,8 @@ import React, {SyntheticEvent, useContext, useEffect, useState} from "react";
 import {OfferContext} from "../../../../contexts/offer.context";
 import './ShowOfferDetails.css';
 import {OfferTable} from "./OfferTable/OfferTable";
+import {ProgressBar} from "react-loader-spinner";
+
 
 
 export const ShowOfferDetails = () => {
@@ -15,13 +17,11 @@ export const ShowOfferDetails = () => {
 
     const refreshOfferList = async () => {
         setLoading(true);
-        console.log(data.length);
 
         try{
             setData([]);
             const res = await fetch(`http://localhost:3001/price/offer/${searchOffer}`);
             const {productsList} = await res.json();
-            console.log('po fetchu',productsList);
             setData(productsList);
             setOfferInputValue(searchOffer);
         } finally {
@@ -55,9 +55,19 @@ export const ShowOfferDetails = () => {
                 </label>
                 <Button className={`standard-button-high-margin`} text={`Zastosuj`}/>
             </form>
-
-            {data.length === 0 ? <h1>Offer does not exist or search field is empty</h1> :
-                <OfferTable offerList={data}/>
+            {loading ?
+                <ProgressBar
+                    height="90"
+                    width="100"
+                    ariaLabel="progress-bar-loading"
+                    wrapperStyle={{margin: '0 auto'}}
+                    wrapperClass="progress-bar-wrapper"
+                    borderColor = '#000000'
+                    barColor = '#ffffff'
+                />:
+                data.length === 0 ?
+                    <h1>Offer does not exist or search field is empty</h1> :
+                    <OfferTable offerList={data}/>
             }
         </div>);
 }

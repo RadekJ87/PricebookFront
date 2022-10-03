@@ -1,8 +1,8 @@
 import React from "react";
-import { OfferEntity } from "types";
+import { ProductEntity } from "types";
 
 interface Props {
-    product: OfferEntity,
+    product: ProductEntity,
 }
 
 export const OfferTableRow = ({product}: Props) => {
