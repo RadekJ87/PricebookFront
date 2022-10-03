@@ -27,3 +27,23 @@
     margin: 5px 0;
     cursor: pointer;
 }
+
+.standard-button-low-margin{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.standard-button-high-margin{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 17px 20px;
+    cursor: pointer;
+}

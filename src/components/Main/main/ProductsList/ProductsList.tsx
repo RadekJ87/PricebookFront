@@ -6,9 +6,11 @@ import {SearchContext} from "../../../../contexts/search.context";
 import {NoFoundProductsList} from "../NoFoundProductsList";
 import "./ProductsList.css";
 import {Button} from "../../../common/Button/Button";
+import {GlobalContext} from "../../../../contexts/global.context";
 
 export const ProductsList = () => {
     const {search, setSearch} = useContext(SearchContext);
+    const {randomNumber, setRandomNumber} = useContext(GlobalContext);
 
     const [data, setData] = useState<ListProductsRes | null>(null);
     const [inputValue, setInputValue] = useState(search);
@@ -24,7 +26,7 @@ export const ProductsList = () => {
 
     useEffect(() => {
         refresh();
-    }, [search]); // zrob dodawanie poroduktow w tym samym widoku, dodaj do use efect -> data, zobacz czy przeładowuję. Mozna dodatkowy context zronic?
+    }, [search, randomNumber]); // zrob dodawanie poroduktow w tym samym widoku, dodaj do use efect -> data, zobacz czy przeładowuję. Mozna dodatkowy context zronic?
 
     const setFromLocalState = (e: SyntheticEvent) => {
         e.preventDefault();

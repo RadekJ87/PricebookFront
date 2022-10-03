@@ -1,0 +1,43 @@
+.offer-table{
+    margin: 0 auto;
+    width: 96%;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.offer-table thead{
+    text-align: center;
+    background-color:#E8F0FE;
+}
+
+.offer-table th, .offer-table td {
+    padding: 2px 2px;
+}
+
+.offer-table thead th:nth-child(1){
+    width: 35%;
+}
+.offer-table thead th:nth-child(2){
+  width: 22.5%;
+}
+.offer-table thead th:nth-child(3){
+    width: 27.5%;
+}
+.offer-table thead th:nth-child(5){
+    width: 15%;
+}
+
+
+.offer-table tbody{
+    text-align: center;
+}
+
+.offer-table tbody tr:nth-child(even){
+    background-color: #EEEEEE;
+}
+.offer-table tbody tr:nth-child(odd){
+    background-color: #BBBBBB;
+}
+
+

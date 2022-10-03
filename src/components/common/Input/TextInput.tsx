@@ -5,8 +5,8 @@ interface InputProps {
     description?: string,
     value?: string,
     onChange?: any,
-    minLength: number,
-    maxLength: number,
+    minLength?: number,
+    maxLength?: number,
     name: string,
 }
 

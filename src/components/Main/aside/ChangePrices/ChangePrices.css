@@ -1,15 +1,16 @@
-.add-new-product-container{
+.change-price-container{
     display: flex;
     flex-direction: column;
-    flex-basis: 70%;
-    width: 50%;
+    justify-content: flex-start;
+    align-items: start;
 }
 
-.add-new-product-container>h1{
+.change-price-container h1{
     font-size: 14px;
     margin: 5px 0 25px 10px;
 }
-.add-new-product-container form{
+
+.change-price-container form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,17 +18,13 @@
     margin: 0 0 10px 10px;
 }
 
-.add-new-product-container form>label{
-  margin-bottom: 12px;
-}
-
-
-.add-new-product-container form label>p{
+.change-price-container p{
     font-size: 12px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.add-new-product-container input{
+.change-price-container input{
     font-size: 12px;
     font-family: Calibri;
     padding: 0 5px;
@@ -35,8 +32,5 @@
     height: 25px;
     box-shadow: 3px 3px 5px black;
     border-radius: 4px;
-}
-
-form~Button.add-product-form-button{
-    margin: 0 0 10px 10px;
+    margin-bottom: 10px;
 }
