@@ -14,13 +14,23 @@ export const ProductsTable = (props: Props) => {
         <table className={`products-table ${props.isActive ? "active" : ""}`}>
             <thead>
             <tr>
-                <th>Description</th>
-                <th>Drawing number</th>
-                <th>Revision</th>
-                <th>Item number</th>
+                {/*EN*/}
+                {/*<th>Description</th>*/}
+                {/*<th>Drawing number</th>*/}
+                {/*<th>Revision</th>*/}
+                {/*<th>Item number</th>*/}
+                {/*<th>MOQ</th>*/}
+                {/*<th>Price</th>*/}
+                {/*<th>Offer number</th>*/}
+
+                {/*PL*/}
+                <th>Opis</th>
+                <th>Numer rysunku</th>
+                <th>Rewizja</th>
+                <th>Numer materiału</th>
                 <th>MOQ</th>
-                <th>Price</th>
-                <th>Offer number</th>
+                <th>Cena</th>
+                <th>Numer oferty</th>
             </tr>
             </thead>
             <tbody>

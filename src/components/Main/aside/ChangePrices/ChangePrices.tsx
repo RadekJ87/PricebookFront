@@ -1,7 +1,6 @@
 import {useContext, useState} from "react";
 import {Button} from "../../../common/Button/Button";
 import './ChangePrices.css';
-import {SearchContext} from "../../../../contexts/search.context";
 import {GlobalContext} from "../../../../contexts/global.context";
 
 export const ChangePrices = () => {
