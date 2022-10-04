@@ -28,6 +28,7 @@ export const NoFoundProductsList = (props: drawingNumberToSearch) => {
                     <th>MOQ</th>
                     <th>Cena</th>
                     <th>Numer oferty</th>
+                    <th>Akcja</th>
                 </tr>
                 </thead>
             </table>

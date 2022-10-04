@@ -19,13 +19,13 @@
     width: 35%;
 }
 .offer-table thead th:nth-child(2){
-  width: 22.5%;
+  width: 30%;
 }
 .offer-table thead th:nth-child(3){
-    width: 27.5%;
+    width: 15%;
 }
 .offer-table thead th:nth-child(5){
-    width: 15%;
+    width: 20%;
 }
 
 
@@ -39,5 +39,6 @@
 .offer-table tbody tr:nth-child(odd){
     background-color: #BBBBBB;
 }
+
 
 

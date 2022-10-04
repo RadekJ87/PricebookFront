@@ -12,10 +12,18 @@ export const OfferTable = ({offerList}: Props) => {
         <table className={`offer-table`}>
             <thead>
             <tr>
-                <th>Description</th>
-                <th>Drawing number</th>
-                <th>Item number</th>
-                <th>Price</th>
+                {/*EN*/}
+                {/*<th>Description</th>*/}
+                {/*<th>Drawing number</th>*/}
+                {/*/!*<th>Item number</th>*!/*/}
+                {/*<th>MOQ</th>*/}
+                {/*<th>Price</th>*/}
+                {/*PL*/}
+                <th>Opis</th>
+                <th>Numer rysunku</th>
+                {/*<th>Item number</th>*/}
+                <th>MOQ</th>
+                <th>Cena</th>
             </tr>
             </thead>
             <tbody>

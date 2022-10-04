@@ -10,7 +10,8 @@ export const OfferTableRow = ({product}: Props) => {
         <tr>
             <td>{product.description}</td>
             <td>{product.drawingNumber}</td>
-            {product.itemNumber === '' ? <td>BRAK</td> : <td>{product.itemNumber}</td>}
+            {/*{product.itemNumber === '' ? <td>BRAK</td> : <td>{product.itemNumber}</td>}*/}
+            <td>{product.moq}</td>
             <td>{product.price}€</td>
         </tr>
     );
