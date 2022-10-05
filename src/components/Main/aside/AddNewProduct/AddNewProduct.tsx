@@ -3,9 +3,13 @@ import {SearchContext} from "../../../../contexts/search.context";
 import "./AddNewProduct.css";
 import {Button} from "../../../common/Button/Button";
 import {TextInput} from "../../../common/Input/TextInput";
+import { GlobalContext } from "../../../../contexts/global.context";
+
 
 export const AddNewProduct = () => {
     const {search, setSearch} = useContext(SearchContext);
+    const {randomNumber, setRandomNumber} = useContext(GlobalContext);
+
     const [loading, setLoading] = useState(false);
     const [form, setForm] = useState({
         description: '',
@@ -37,6 +41,7 @@ export const AddNewProduct = () => {
         } finally {
             setLoading(false);
             setSearch(`${form.drawingNumber}`);
+            setRandomNumber(Math.random());
         }
 
     }

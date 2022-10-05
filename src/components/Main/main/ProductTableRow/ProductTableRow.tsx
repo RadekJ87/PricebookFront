@@ -30,10 +30,8 @@ export const ProductTableRow = (props: Props) => {
             });
 
             const data = await res.json();
-            console.log('wybrane', selectedProductId);
-            console.log('res z BE', data);
 
-
+            console.log(data);
         } finally {
             setLoading(false);
             setRandomNumber(Math.random())
