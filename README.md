@@ -13,6 +13,8 @@ Główne funcjonalności:
 - wyświetlanie zawartości cennika,
 - wyszukiwanie rekordów po numerze rysunku,
 - dodawanie nowych produktów do cennika,
+- usuwanie produktów,
+- edytowanie produktów,
 - globalna zmiana cen na podstawie wskazanej podwyżki/obniżki procentowej,
 - wyświetlanie zawartości oferty handlowej,
 
