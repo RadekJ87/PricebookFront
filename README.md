@@ -6,6 +6,7 @@
 
 ## Wstęp - opis
 
+
 Hej! Pricebook to prosty cennik dla firm zajmujących się produkcją elementów stalowych.<br> Aplikację stworzyłem na własne potrzeby zawodowe, do szybkiej identyfikacji cen produktów na podstawie numeru rysunku technicznego.
 <br>Powinna się sprawdzić nie tylko w przypadku mojego pracodawcy, ale także w innych przedsiębiorstwach zajmujących się szeroko rozumianą obróbką stali.
 Główne funcjonalności:
@@ -14,7 +15,6 @@ Główne funcjonalności:
 - dodawanie nowych produktów do cennika,
 - globalna zmiana cen na podstawie wskazanej podwyżki/obniżki procentowej,
 - wyświetlanie zawartości oferty handlowej,
-
 
 
 ## Demo
@@ -53,8 +53,8 @@ Dostępne wkrótce
 - typescript 4.7.4,
 - web-vitals 2.1.4.
 
-### DevDependencies
 
+### DevDependencies
 - customize-cra 1.0.0,
 - react-app-rewire-alias 1.1.7.
 
