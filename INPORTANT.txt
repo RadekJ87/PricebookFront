@@ -1,1 +1,0 @@
-W razie problemów z importem typów z BE, edytuj scieżkę w tsconfig.paths.json
