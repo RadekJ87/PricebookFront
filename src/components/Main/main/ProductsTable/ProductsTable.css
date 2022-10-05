@@ -20,7 +20,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
 }
 
 .products-table thead th {
@@ -68,11 +68,11 @@
 }
 
 .products-table tbody td:first-child, .products-table thead th:first-child {
-    width: 190%;
+    width: 172.5%;
 }
 
 .products-table tbody td:nth-child(3), .products-table thead th:nth-child(3) {
-    width: 50%;
+    width: 45%;
 }
 
 .products-table tbody td:nth-child(4), .products-table thead th:nth-child(4) {
@@ -83,12 +83,14 @@
     width: 75%;
 }
 
-.products-table tbody td:last-child, .products-table thead th:last-child {
-    width: 30%;
+.products-table tbody td:nth-last-child(-n+2){
+    width: 23%;
+    padding: 2px;
 }
 
 .products-table thead th:last-child {
-    margin-right: 13px;
+    width: 52.5%;
+    margin-right: 3px;
 }
 
 

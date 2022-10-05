@@ -27,8 +27,9 @@
     width: 15%;
 }
 
-.offer-table thead th:nth-child(5){
+.offer-table thead th:nth-child(5) {
     width: 20%;
+}
 
 .offer-table tbody{
     text-align: center;

@@ -1,17 +1,16 @@
-import {SyntheticEvent, useContext, useState} from "react";
+import {SyntheticEvent, useContext, useEffect, useState} from "react";
 import {SearchContext} from "../../../../contexts/search.context";
-import "./AddNewProduct.css";
+import {GlobalContext} from "../../../../contexts/global.context";
 import {Button} from "../../../common/Button/Button";
-import {TextInput} from "../../../common/Input/TextInput";
-import { GlobalContext } from "../../../../contexts/global.context";
+import {IdContext} from "../../../../contexts/id.context";
 
-
-export const AddNewProduct = () => {
+export const EditProduct = () => {
     const {search, setSearch} = useContext(SearchContext);
+    const {id, setId} = useContext(IdContext);
     const {randomNumber, setRandomNumber} = useContext(GlobalContext);
-
     const [loading, setLoading] = useState(false);
     const [form, setForm] = useState({
+        id: '',
         description: '',
         drawingNumber: '',
         revision: '',
@@ -21,30 +20,18 @@ export const AddNewProduct = () => {
         offerNumber: '',
     });
 
-    const addProductToDatabase = async (e: SyntheticEvent) => {
-        e.preventDefault();
 
-        setLoading(true);
-
-        try {
-            const res = await fetch('http://localhost:3001/price', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    ...form,
-                }),
-            });
-
-
-        } finally {
-            setLoading(false);
-            setSearch(`${form.drawingNumber}`);
-            setRandomNumber(Math.random());
-        }
-
+    const fillEditForm = async () => {
+        const res = await fetch(`http://localhost:3001/price/get-one/${id}`);
+        const data = await res.json();
+        setForm(data);
     }
+
+
+    useEffect(() => {
+        fillEditForm();
+    }, [id]);
+
 
     const updateForm = (key: string, value: any) => {
         setForm(form => ({
@@ -53,27 +40,44 @@ export const AddNewProduct = () => {
         }));
     };
 
-    const clearForm = () => {
-        setForm({
-            description: '',
-            drawingNumber: '',
-            revision: '',
-            itemNumber: '',
-            moq: 0,
-            price: 0,
-            offerNumber: '',
-        });
+    const updateProduct = async (e: SyntheticEvent) => {
+        e.preventDefault();
+
+        setLoading(true);
+
+        console.log('form z submit', form);
+
+
+        try {
+            const res = await fetch(`http://localhost:3001/price/update-one/${form.id}`, {
+                method: 'PATCH',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    ...form,
+                }),
+            });
+
+            const data = await res.json();
+            console.log('res z BE', data);
+
+        } finally {
+            setLoading(false);
+            // setSearch(`${form.drawingNumber}`);
+            setRandomNumber(Math.random());
+        }
     }
 
 
     if (loading) {
-        return (<h1>Trwa dodawanie produktu do bazy danych...</h1>);
+        return (<h1>Trwa aktualizacja bazy danych...</h1>);
     }
 
     return (
         <div className="add-new-product-container">
-            <h1>Dodaj produkt do cennika</h1>
-            <form onSubmit={addProductToDatabase}>
+            <h1>Aktualizuj dane</h1>
+            <form onSubmit={updateProduct}>
                 <label>
                     <p>Opis</p>
                     <input
@@ -141,9 +145,8 @@ export const AddNewProduct = () => {
                            value={form.offerNumber}
                            onChange={e => updateForm("offerNumber", e.target.value)}/>
                 </label>
-                <Button text={'Dodaj do cennika'} type={'submit'} className={'add-product-form-button'}/>
+                <Button text='Aktualizuj' type={'submit'} className={'add-product-form-button'}/>
             </form>
-            <Button text={'Wyczyść pola'} className={'add-product-form-button'} onClick={clearForm}/>
         </div>
     );
 }
