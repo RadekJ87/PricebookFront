@@ -18,16 +18,17 @@
 .offer-table thead th:nth-child(1){
     width: 35%;
 }
+
 .offer-table thead th:nth-child(2){
-  width: 27.5%;
-}
-.offer-table thead th:nth-child(3){
-    width: 20%;
-}
-.offer-table thead th:nth-child(5){
-    width: 17.5%;
+  width: 30%;
 }
 
+.offer-table thead th:nth-child(3){
+    width: 15%;
+}
+
+.offer-table thead th:nth-child(5){
+    width: 20%;
 
 .offer-table tbody{
     text-align: center;
@@ -36,8 +37,10 @@
 .offer-table tbody tr:nth-child(even){
     background-color: #EEEEEE;
 }
+  
 .offer-table tbody tr:nth-child(odd){
     background-color: #BBBBBB;
 }
+
 
 

@@ -1,5 +1,5 @@
 import React from "react";
-import {ProductTableRow} from "../ProductTableRow";
+import {ProductTableRow} from "../ProductTableRow/ProductTableRow";
 import {ProductEntity} from 'types';
 import "./ProductsTable.css";
 
@@ -31,6 +31,7 @@ export const ProductsTable = (props: Props) => {
                 <th>MOQ</th>
                 <th>Cena</th>
                 <th>Numer oferty</th>
+                <th>Akcja</th>
             </tr>
             </thead>
             <tbody>

@@ -14,16 +14,17 @@ export const OfferTable = ({offerList}: Props) => {
             <tr>
                 {/*EN*/}
                 {/*<th>Description</th>*/}
-                {/*<th>Item number</th>*/}
+                {/*<th>Drawing number</th>*/}
+                {/*/!*<th>Item number</th>*!/*/}
                 {/*<th>MOQ</th>*/}
                 {/*<th>Price</th>*/}
                 {/*PL*/}
                 <th>Opis</th>
-                <th>Numer materiału</th>
+                <th>Numer rysunku</th>
+                {/*<th>Item number</th>*/}
                 <th>MOQ</th>
                 <th>Cena</th>
             </tr>
-
             </thead>
             <tbody>
             {

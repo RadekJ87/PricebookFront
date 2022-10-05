@@ -66,7 +66,7 @@ export const ShowOfferDetails = () => {
                     barColor = '#ffffff'
                 />:
                 data.length === 0 ?
-                    <h1>Offer does not exist or search field is empty</h1> :
+                    <h1>Oferta o podanym numerze nie istnieje lub pole wyszukiwania jest puste</h1> :
                     <OfferTable offerList={data}/>
             }
         </div>);
