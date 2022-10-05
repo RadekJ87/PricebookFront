@@ -75,7 +75,7 @@ export const AddNewProduct = () => {
             <h1>Dodaj produkt do cennika</h1>
             <form onSubmit={addProductToDatabase}>
                 <label>
-                    <p>Description</p>
+                    <p>Opis</p>
                     <input
                         type="text"
                         name="description"
@@ -86,7 +86,7 @@ export const AddNewProduct = () => {
                     />
                 </label>
                 <label>
-                    <p>Drawing number</p>
+                    <p>Numer rysunku</p>
                     <input type="text"
                            name="drawingNumber"
                            required
@@ -95,7 +95,7 @@ export const AddNewProduct = () => {
                            onChange={e => updateForm("drawingNumber", e.target.value)}/>
                 </label>
                 <label>
-                    <p>Revision</p>
+                    <p>Rewizja</p>
                     <input type="text"
                            name="revision"
                            required
@@ -104,7 +104,7 @@ export const AddNewProduct = () => {
                            onChange={e => updateForm("revision", e.target.value)}/>
                 </label>
                 <label>
-                    <p>Item number</p>
+                    <p>Numer materiału</p>
                     <input type="text"
                            name="itemNumber"
                            maxLength={20}
@@ -122,7 +122,7 @@ export const AddNewProduct = () => {
                            onChange={e => updateForm("moq", Number(e.target.value))}/>
                 </label>
                 <label>
-                    <p>Price</p>
+                    <p>Cena</p>
                     <input type="number"
                            name="price"
                            required
@@ -133,7 +133,7 @@ export const AddNewProduct = () => {
                            onChange={e => updateForm("price", Number(e.target.value))}/>
                 </label>
                 <label>
-                    <p>Offer number</p>
+                    <p>Numer oferty</p>
                     <input type="text"
                            name="offerNumber"
                            minLength={7}

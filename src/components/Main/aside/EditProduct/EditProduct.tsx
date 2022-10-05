@@ -79,7 +79,7 @@ export const EditProduct = () => {
             <h1>Aktualizuj dane</h1>
             <form onSubmit={updateProduct}>
                 <label>
-                    <p>Description</p>
+                    <p>Opis</p>
                     <input
                         type="text"
                         name="description"
@@ -90,7 +90,7 @@ export const EditProduct = () => {
                     />
                 </label>
                 <label>
-                    <p>Drawing number</p>
+                    <p>Numer rysunku</p>
                     <input type="text"
                            name="drawingNumber"
                            required
@@ -99,7 +99,7 @@ export const EditProduct = () => {
                            onChange={e => updateForm("drawingNumber", e.target.value)}/>
                 </label>
                 <label>
-                    <p>Revision</p>
+                    <p>Rewizja</p>
                     <input type="text"
                            name="revision"
                            required
@@ -108,7 +108,7 @@ export const EditProduct = () => {
                            onChange={e => updateForm("revision", e.target.value)}/>
                 </label>
                 <label>
-                    <p>Item number</p>
+                    <p>Numer materiału</p>
                     <input type="text"
                            name="itemNumber"
                            maxLength={20}
@@ -126,7 +126,7 @@ export const EditProduct = () => {
                            onChange={e => updateForm("moq", Number(e.target.value))}/>
                 </label>
                 <label>
-                    <p>Price</p>
+                    <p>Cena</p>
                     <input type="number"
                            name="price"
                            required
@@ -137,7 +137,7 @@ export const EditProduct = () => {
                            onChange={e => updateForm("price", Number(e.target.value))}/>
                 </label>
                 <label>
-                    <p>Offer number</p>
+                    <p>Numer oferty</p>
                     <input type="text"
                            name="offerNumber"
                            minLength={7}

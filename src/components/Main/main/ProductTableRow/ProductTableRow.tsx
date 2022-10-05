@@ -38,7 +38,7 @@ export const ProductTableRow = (props: Props) => {
             console.log(data);
         } finally {
             setLoading(false);
-            setRandomNumber(Math.random())
+            setRandomNumber(Math.random());
         }
     };
 
