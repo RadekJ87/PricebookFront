@@ -21,9 +21,8 @@ Główne funcjonalności:
 
 ## Demo
 
-Dostępne wkrótce
+[![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/RadekJ87/PricebookFront/main/public/pricebook_readme.png)](https://youtu.be/tKWCImPtX8c)
 
-[![IMAGE ALT TEXT HERE](https://github.com/RadekJ87/PricebookFront/blob/1f405ddfe529dc24e5e23d59545a78e3f19ba43a/public/pricebook_readme.png)](https://youtu.be/tKWCImPtX8c;
 
 ## Technologia
 
