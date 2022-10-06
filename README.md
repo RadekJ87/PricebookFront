@@ -23,7 +23,7 @@ Główne funcjonalności:
 
 Dostępne wkrótce
 
-[comment]: <> ([![IMAGE ALT TEXT HERE]&#40;https://raw.githubusercontent.com/RadekJ87/OfferGenerator/main/public/assets/images/readme_img.PNG&#41;]&#40;https://youtu.be/yL0xIbkTV5w&#41;)
+[![IMAGE ALT TEXT HERE](https://github.com/RadekJ87/PricebookFront/blob/1f405ddfe529dc24e5e23d59545a78e3f19ba43a/public/pricebook_readme.png)](https://youtu.be/tKWCImPtX8c;
 
 ## Technologia
 
@@ -50,6 +50,7 @@ Dostępne wkrótce
 - @types/react-dom 18.0.5,
 - react 18.2.0,
 - react-dom 18.2.0,
+- react-loader-spinner 5.3.4,
 - react-router-dom 6.3.0,
 - react-scripts 5.0.1,
 - typescript 4.7.4,
