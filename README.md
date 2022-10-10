@@ -1,7 +1,3 @@
-<div position="center">
-<img src="./public/pricebook_readme.png">
-</div>
-
 # Pricebook App - FrontEnd
 
 ## Wstęp - opis
@@ -21,7 +17,7 @@ Główne funcjonalności:
 
 ## Demo
 
-[![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/RadekJ87/PricebookFront/main/public/pricebook_readme.png)](https://youtu.be/tKWCImPtX8c)
+[![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/RadekJ87/PricebookFront/main/public/pricebook_readme.png)](https://youtu.be/HcNVHpKwjDA)
 
 
 ## Technologia
